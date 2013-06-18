@@ -1,0 +1,7 @@
+main: main.o puzzle.o
+	g++ -o solver.out main.o puzzle.o
+main.o: main.cpp
+	g++ -c main.cpp
+puzzle.o: puzzle.cpp
+	g++ -c puzzle.cpp
+clean: rm -rf *.o
